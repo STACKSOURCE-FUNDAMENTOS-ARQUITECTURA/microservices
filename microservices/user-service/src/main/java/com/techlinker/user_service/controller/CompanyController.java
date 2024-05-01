@@ -1,6 +1,8 @@
 package com.techlinker.user_service.controller;
 
+import com.techlinker.user_service.dto.request.PostDTORequest;
 import com.techlinker.user_service.entities.Company;
+
 import com.techlinker.user_service.service.ICompanyService;
 import com.techlinker.user_service.service.IUserService;
 import jakarta.validation.Valid;
@@ -10,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -48,5 +51,33 @@ public class CompanyController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+    @GetMapping(value = "/{companyId}/posts", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> getPostsByCompanyId(@PathVariable("companyId") Long companyId) {
+        try {
+            Optional<Company> company = companyService.getById(companyId);
+            if (!company.isPresent()) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            return new ResponseEntity<>(companyService.getPostsByCompanyId(companyId), HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
+    @PostMapping(value = "/{companyId}/posts", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+public ResponseEntity<?> createPostByCompanyId(@PathVariable("companyId") Long companyId, @Valid @RequestBody PostDTORequest post) {
+        try {
+            Optional<Company> company = companyService.getById(companyId);
+            if (!company.isPresent()) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            return new ResponseEntity<>(companyService.savePostByCompanyId(companyId, post), HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
 
 }

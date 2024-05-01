@@ -54,17 +54,10 @@ public class PostController {
     }
 
     @PostMapping(value = "/companyId={id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-
     public ResponseEntity<Post> createPost(@PathVariable("id") Long id, @Valid @RequestBody Post post){
         try {
-            /*Optional<Company> userCompany = companyService.getById(id);
-            if(!userCompany.isPresent())
-                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-            else {*/
-
             Post newPost = postService.save(post);
             return ResponseEntity.status(HttpStatus.CREATED).body(newPost);
-        //}
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -104,8 +97,7 @@ public class PostController {
     }
 
     @GetMapping(value = "/company/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-
-    public ResponseEntity<List<Post>> findByCompanyId (@PathVariable("id") Long id){
+    public ResponseEntity<List<Post>> findPostsByCompanyId (@PathVariable("id") Long id){
         try {
             List<Post> posts = postService.findByCompanyId(id);
             if(posts.size()>0)

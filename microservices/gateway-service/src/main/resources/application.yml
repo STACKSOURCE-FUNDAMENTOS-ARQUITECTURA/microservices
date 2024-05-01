@@ -1,0 +1,26 @@
+server:
+  port: 8090
+
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: user-service
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/v1/developers/**,/api/v1/companies/**
+        - id: employment-service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/v1/posts/**
+        - id: profile-service
+          uri: http://localhost:8085
+          predicates:
+            - Path=/api/v1/digital_profiles/**

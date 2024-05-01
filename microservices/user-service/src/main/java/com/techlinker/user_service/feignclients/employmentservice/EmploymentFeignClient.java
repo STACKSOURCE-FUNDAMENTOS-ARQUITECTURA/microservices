@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@FeignClient(name = "employment-service", url = "http://localhost:8084/api/v1/posts")
+@FeignClient(name = "employment-service", url = "http://localhost:8090/api/v1/posts")
  public interface EmploymentFeignClient {
  @GetMapping(value = "/company/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
  public ResponseEntity<List<PostDTOResponse>> findPostsByCompanyId (@PathVariable("id") Long id);

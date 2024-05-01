@@ -8,9 +8,11 @@
 		<version>3.2.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.techlinker</groupId>
 	<artifactId>microservices</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
+
 	<packaging>pom</packaging>
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
@@ -22,6 +24,9 @@
 		<module>user-service</module>
 		<module>profile-service</module>
 		<module>employment-service</module>
+		<module>gateway-service</module>
+		<module>eureka-service</module>
+		<module>config-service</module>
 	</modules>
 
 	<dependencies>

@@ -3,7 +3,7 @@ package com.techlinker.user_service.service.impl;
 import com.techlinker.user_service.dto.request.PostDTORequest;
 import com.techlinker.user_service.dto.response.PostDTOResponse;
 import com.techlinker.user_service.entities.Company;
-import com.techlinker.user_service.feignclients.EmploymentFeignClient;
+import com.techlinker.user_service.feignclients.employmentservice.EmploymentFeignClient;
 import com.techlinker.user_service.http.response.PostsByCompanyResponse;
 import com.techlinker.user_service.repository.ICompanyRepository;
 import com.techlinker.user_service.service.ICompanyService;

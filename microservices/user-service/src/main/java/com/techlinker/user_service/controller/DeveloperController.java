@@ -1,6 +1,8 @@
 package com.techlinker.user_service.controller;
 import java.util.List;
+import java.util.Optional;
 
+import com.techlinker.user_service.dto.request.DigitalProfileDTORequest;
 import com.techlinker.user_service.entities.Developer;
 import com.techlinker.user_service.service.IDeveloperService;
 import jakarta.validation.Valid;
@@ -40,6 +42,21 @@ public class DeveloperController {
         try {
             Developer developerCreate = developerService.save(developer);
             return new ResponseEntity<>(developerCreate, HttpStatus.CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PostMapping(value = "/{developerId}/digital_profile", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> createDigitalProfile(@PathVariable("developerId") Long developerId, @Valid @RequestBody DigitalProfileDTORequest digitalProfile){
+        try {
+            Optional<Developer> developer = developerService.getById(developerId);
+            if (!developer.isPresent()) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+            //TODO: check if developer already have a digital profile
+             return new ResponseEntity<>(developerService.createDigitalProfile(developerId, digitalProfile), HttpStatus.CREATED);
+
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }

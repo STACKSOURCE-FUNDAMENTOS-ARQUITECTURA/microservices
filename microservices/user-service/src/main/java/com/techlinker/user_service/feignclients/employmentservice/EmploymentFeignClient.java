@@ -1,4 +1,4 @@
-package com.techlinker.user_service.feignclients;
+package com.techlinker.user_service.feignclients.employmentservice;
 
 import com.techlinker.user_service.dto.request.PostDTORequest;
 import com.techlinker.user_service.dto.response.PostDTOResponse;

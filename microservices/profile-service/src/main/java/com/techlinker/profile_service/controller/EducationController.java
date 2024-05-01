@@ -59,7 +59,6 @@ import java.util.Optional;
     }
 
     @PostMapping(value = "/digitalProfileId={id}" ,produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-
     public ResponseEntity<Education> insertEducation(@PathVariable("id")Long idDigitalProfile, @RequestBody Education education){
         try{
             Optional<DigitalProfile> digitalProfile = digitalProfileService.getById(idDigitalProfile);

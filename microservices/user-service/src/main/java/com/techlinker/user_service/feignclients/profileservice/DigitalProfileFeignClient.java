@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "profile-service", url = "http://localhost:8085/api/v1/digital_profiles")
+@FeignClient(name = "profile-service", url = "http://localhost:8090/api/v1/digital_profiles")
 public interface DigitalProfileFeignClient {
 
     @PostMapping(value = "/developerId={developer_id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)

@@ -4,4 +4,4 @@ import com.techlinker.user_service.entities.User;
 
 public interface IUserService extends CrudService<User> {
 
-} //Update User Service cs
+} //Update User Service 

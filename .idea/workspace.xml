@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e5f17bf-f217-46cd-a156-928e82161d42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/microservices/search-service/src/main/java/com/techlinker/search_service/entity/Developer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/config-service/src/main/resources/config/search-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/search-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/microservices.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/microservices.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/search-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/search-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/search-service/src/main/java/com/techlinker/search_service/SearchServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/search-service/src/main/java/com/techlinker/search_service/SearchServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/search-service/src/main/java/com/techlinker/search_service/entity/Developer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/search-service/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +24,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2h1HygEmRJjNkJByFl0uHEr00fi" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,7 +41,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ConfigServiceApplication.executor": "Run",
+    "Spring Boot.EurekaServiceApplication.executor": "Run",
+    "Spring Boot.SearchServiceApplication.executor": "Run",
     "git-widget-placeholder": "feat/search-service",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/8vo ciclo/Fundamentos de Arquitectura de Software/TF - Microservicios/microservices",
@@ -34,6 +58,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -41,6 +69,70 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\8vo ciclo\Fundamentos de Arquitectura de Software\TF - Microservicios\microservices\microservices" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConfigServiceApplication">
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techlinker.config_service.ConfigServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmploymentServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="employment-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techlinker.employment_service.EmploymentServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eureka-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techlinker.eureka_service.EurekaServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techlinker.gateway_service.GatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="profile-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techlinker.profile_service.ProfileServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="search-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techlinker.search_service.SearchServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.techlinker.user_service.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -58,7 +150,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1716754920570</updated>
-      <workItem from="1716754921785" duration="2655000" />
+      <workItem from="1716754921785" duration="2962000" />
+      <workItem from="1716758152641" duration="3886000" />
     </task>
     <servers />
   </component>

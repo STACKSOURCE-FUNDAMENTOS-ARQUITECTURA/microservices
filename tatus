@@ -1,0 +1,137 @@
+[33mcommit 49d29da3b4e8cb9ab53a5fe0401e05d85ad1fa8b[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Merge: bf46840 e86870f
+Author: Michael Carrillo Mainicta <89095546+MICHAELCARRILLO@users.noreply.github.com>
+Date:   Wed May 1 01:33:24 2024 -0500
+
+    Merge pull request #6 from STACKSOURCE-FUNDAMENTOS-ARQUITECTURA/feat/config-service
+    
+    Feat/config service
+
+[33mcommit e86870fd8d5936c5d304705b63f2ebeee14c249a[m[33m ([m[1;31morigin/feat/config-service[m[33m)[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Wed May 1 01:32:35 2024 -0500
+
+    feat: Added Config Service
+
+[33mcommit 39afe8a2c60eec33dba8c572a8c5d2aafcdcd7be[m
+Merge: bf46840 ff44203
+Author: Michael Carrillo Mainicta <89095546+MICHAELCARRILLO@users.noreply.github.com>
+Date:   Wed May 1 00:45:12 2024 -0500
+
+    Merge pull request #5 from STACKSOURCE-FUNDAMENTOS-ARQUITECTURA/feat/gateway-service
+    
+    Feat/gateway service
+
+[33mcommit ff44203ac0fcb8c798709a4f7024cc1fcd83925e[m[33m ([m[1;31morigin/feat/gateway-service[m[33m)[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Wed May 1 00:44:18 2024 -0500
+
+    feat: Added API Gateway
+
+[33mcommit d312968f620387324026d48a8c805e0ddeb47b36[m
+Merge: bf46840 06d5aea
+Author: Michael Carrillo Mainicta <89095546+MICHAELCARRILLO@users.noreply.github.com>
+Date:   Tue Apr 30 23:58:46 2024 -0500
+
+    Merge pull request #4 from STACKSOURCE-FUNDAMENTOS-ARQUITECTURA/feat/eureka-service
+    
+    feat: Added Eureka
+
+[33mcommit 06d5aea909ab0cf04a433c728af6414810014cd8[m[33m ([m[1;31morigin/feat/eureka-service[m[33m)[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 23:56:54 2024 -0500
+
+    feat: Added Eureka
+
+[33mcommit bf468401698e30336b0cb8c176c259fe0d555fe2[m
+Merge: 102f1a8 85b8c29
+Author: Michael Carrillo Mainicta <89095546+MICHAELCARRILLO@users.noreply.github.com>
+Date:   Tue Apr 30 23:04:20 2024 -0500
+
+    Merge pull request #3 from STACKSOURCE-FUNDAMENTOS-ARQUITECTURA/feat/user-service
+    
+    Feat/user service
+
+[33mcommit 102f1a89a3d0d911b51ddd2e322d2bc121a2e7d0[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 23:03:12 2024 -0500
+
+    feat: Added eureka, config and gateway setup
+
+[33mcommit 85b8c29ef927bb9f48a462fae24bdd409c7ad463[m[33m ([m[1;31morigin/feat/user-service[m[33m)[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 22:28:50 2024 -0500
+
+    feat: Added Profile Feign Client
+
+[33mcommit 53eb839de1f606fa2977ee65369f0135c426178c[m
+Merge: e03f916 0c0d038
+Author: Michael Carrillo Mainicta <89095546+MICHAELCARRILLO@users.noreply.github.com>
+Date:   Tue Apr 30 21:51:07 2024 -0500
+
+    Merge pull request #2 from STACKSOURCE-FUNDAMENTOS-ARQUITECTURA/feat/profile-service
+    
+    feat: Added Profile Management REST structure
+
+[33mcommit 0c0d038df0c48ee0fff83e805ddd05f36d0651cc[m[33m ([m[1;31morigin/feat/profile-service[m[33m)[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 21:49:21 2024 -0500
+
+    feat: Added Profile Management REST structure
+
+[33mcommit e03f916f3234deaa2cf096a8af6733296fdb4437[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 20:52:49 2024 -0500
+
+    feat: Added User Feign Client
+
+[33mcommit d54bf8b710b9498863e46102cef5d806454a15b7[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 19:17:48 2024 -0500
+
+    feat: Added Feign Client dependency
+
+[33mcommit 8a5c44e236c7442c82d96cf5bc46758706559880[m
+Merge: 25bef13 d1d1ab2
+Author: Michael Carrillo Mainicta <89095546+MICHAELCARRILLO@users.noreply.github.com>
+Date:   Tue Apr 30 19:12:50 2024 -0500
+
+    Merge pull request #1 from STACKSOURCE-FUNDAMENTOS-ARQUITECTURA/feat/employment-service
+    
+    feat: Added Employment REST structure
+
+[33mcommit d1d1ab2320484e2e9ba14457c2ec55ce70577695[m[33m ([m[1;31morigin/feat/employment-service[m[33m)[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 19:11:39 2024 -0500
+
+    feat: Added Employment REST structure
+
+[33mcommit 25bef13b1298a6f57be78fcbee7b25b41e9c68b0[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 14:52:16 2024 -0500
+
+    feat: Added spring boot validation dependency
+
+[33mcommit b6a8156dcef170aefb1afc060f739a1e41a026d0[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 14:51:08 2024 -0500
+
+    feat: Added User REST structure
+
+[33mcommit 8db80eeb07b95ec0c58d51a8b0919241500dba9c[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 13:32:38 2024 -0500
+
+    feat: Added initial microservices setup
+
+[33mcommit b0b264a465fba7bb58938ef198a64b75bd9ccfcc[m
+Author: MICHAELCARRILLO <u20201a924@upc.edu.pe>
+Date:   Tue Apr 30 12:59:56 2024 -0500
+
+    feat: init
+
+[33mcommit 354b9a3c7958350306ecd4a271c1437b71042a04[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Michael Carrillo Mainicta <89095546+MICHAELCARRILLO@users.noreply.github.com>
+Date:   Tue Apr 30 12:08:41 2024 -0500
+
+    Initial commit

@@ -4,24 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e5f17bf-f217-46cd-a156-928e82161d42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/config-service/src/main/resources/config/search-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/search-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/microservices.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/microservices.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9e5f17bf-f217-46cd-a156-928e82161d42" name="Changes" comment="search-service create">
+      <change afterPath="$PROJECT_DIR$/microservices/search-service/src/main/java/com/techlinker/search_service/controller/ProfileSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/search-service/src/main/java/com/techlinker/search_service/service/ProfileSearchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices/search-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/search-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices/search-service/src/main/java/com/techlinker/search_service/SearchServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/search-service/src/main/java/com/techlinker/search_service/SearchServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices/search-service/src/main/java/com/techlinker/search_service/entity/Developer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservices/search-service/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="AnnotationType" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -31,10 +30,16 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2h1HygEmRJjNkJByFl0uHEr00fi" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,6 +55,7 @@
     "Spring Boot.ConfigServiceApplication.executor": "Run",
     "Spring Boot.EurekaServiceApplication.executor": "Run",
     "Spring Boot.SearchServiceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
     "git-widget-placeholder": "feat/search-service",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/8vo ciclo/Fundamentos de Arquitectura de Software/TF - Microservicios/microservices",
@@ -62,10 +68,14 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.techlinker.search_service.model" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\8vo ciclo\Fundamentos de Arquitectura de Software\TF - Microservicios\microservices\microservices" />
     </key>
@@ -151,11 +161,24 @@
       <option name="presentableId" value="Default" />
       <updated>1716754920570</updated>
       <workItem from="1716754921785" duration="2962000" />
-      <workItem from="1716758152641" duration="3886000" />
+      <workItem from="1716758152641" duration="8969000" />
     </task>
+    <task id="LOCAL-00001" summary="search-service create">
+      <option name="closed" value="true" />
+      <created>1716763600212</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716763600213</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="search-service create" />
+    <option name="LAST_COMMIT_MESSAGE" value="search-service create" />
   </component>
 </project>

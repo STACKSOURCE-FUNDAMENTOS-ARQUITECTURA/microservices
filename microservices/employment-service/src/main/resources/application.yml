@@ -1,5 +1,22 @@
+server:
+  port: 8084
+
 spring:
   application:
     name: employment-service
   config:
-    import: optional:configserver:http://localhost:8888
+    import: optional:configserver:http://config-service:8888
+  datasource:
+    url: jdbc:postgresql://techlinker.postgres.database.azure.com:5432/postgres
+    username: admin32
+    password: ad8m0in32#34
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-service:8761/eureka/

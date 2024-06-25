@@ -4,10 +4,10 @@ server:
 spring:
   profiles:
     active: native
-    application:
-      name: config-service
-    cloud:
-      config:
-        server:
-          native:
-            search-locations: classpath:/config
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config

@@ -1,0 +1,109 @@
+version: '3.8'
+
+services:
+  config-service:
+    image: config-service:latest
+    build:
+      context: ./config-service
+      dockerfile: Dockerfile
+    ports:
+      - "8888:8888"
+    networks:
+      - techlinker-network
+
+  eureka-service:
+    image: eureka-service:latest
+    build:
+      context: ./eureka-service
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    depends_on:
+      - config-service
+    environment:
+      - EUREKA_INSTANCE_HOSTNAME=eureka-service
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-service:8761/eureka/
+    networks:
+      - techlinker-network
+
+  gateway-service:
+    image: gateway-service:latest
+    build:
+      context: ./gateway-service
+      dockerfile: Dockerfile
+    ports:
+      - "8092:8092"
+    depends_on:
+      - config-service
+      - eureka-service
+    networks:
+      - techlinker-network
+
+  user-service:
+    image: user-service:latest
+    build:
+      context: ./user-service
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+    depends_on:
+      - config-service
+      - eureka-service
+    networks:
+      - techlinker-network
+
+  search-service:
+    image: search-service:latest
+    build:
+      context: ./search-service
+      dockerfile: Dockerfile
+    ports:
+      - "9092:9092"
+    depends_on:
+      - config-service
+      - eureka-service
+    networks:
+      - techlinker-network
+
+  profile-service:
+    image: profile-service:latest
+    build:
+      context: ./profile-service
+      dockerfile: Dockerfile
+    ports:
+      - "8085:8085"
+    depends_on:
+      - config-service
+      - eureka-service
+    networks:
+      - techlinker-network
+
+  messaging-service:
+    image: messaging-service:latest
+    build:
+      context: ./messaging-service
+      dockerfile: Dockerfile
+    ports:
+      - "9090:9090"
+    depends_on:
+      - config-service
+      - eureka-service
+    networks:
+      - techlinker-network
+
+  employment-service:
+    image: employment-service:latest
+    build:
+      context: ./employment-service
+      dockerfile: Dockerfile
+    ports:
+      - "8084:8084"
+    depends_on:
+      - config-service
+      - eureka-service
+    networks:
+      - techlinker-network
+
+networks:
+  techlinker-network:
+    driver: bridge

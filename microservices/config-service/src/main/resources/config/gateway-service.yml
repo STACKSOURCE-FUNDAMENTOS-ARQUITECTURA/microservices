@@ -22,7 +22,11 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/api/v1/posts/**
+        - id: messaging-service
+          uri: http://localhost:9090
+          predicates:
+              - Path=/api/v1/messages/**
         - id: profile-service
           uri: http://localhost:8085
           predicates:
-            - Path=/api/v1/digital_profiles/**
+            - Path=/api/v1/digital_profiles/**, /api/v1/educations/**, /api/v1/frameworks/**, /api/v1/projects/**, /api/v1/study-centers/**
